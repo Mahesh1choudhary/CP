@@ -1,0 +1,14 @@
+Applying a permutaion k times
+
+Fast application of a set of geometric operations to a set of points
+
+
+Iterative version- Extended euclidian algorithm
+
+segmented seive, primes in range, primarity test- prime numbers
+
+Integer factorization
+
+Arbitary-Precision Arithmetic - Miscelleneous
+
+Pollard rho algorithm for factorization

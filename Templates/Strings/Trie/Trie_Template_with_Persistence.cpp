@@ -1,0 +1,30 @@
+// LINK1 - https://codeforces.com/blog/entry/68858
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Question - https://codeforces.com/problemset/problem/916/Ds

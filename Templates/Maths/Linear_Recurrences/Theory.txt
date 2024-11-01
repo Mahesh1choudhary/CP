@@ -1,0 +1,28 @@
+Linear Recurrence -> F(x) = a1*F(x-1) + a2*F(x-2) + ... ak*F(x-k), where ai can be zero or non zero and base values are given F(0) to F(k-1);
+Find F(n);
+
+APPROACH 1 -> BASIC DP APPROACH -> O(n*k);
+dp[i]=dp[i-1]+dp[i-2]+...... dp[i-k]
+
+
+
+APPROACH 2 -> MATRIX EXPONENTIATION -> O((k^3)logn)
+LINK -> https://zobayer.blogspot.com/2010/11/matrix-exponentiation.html
+
+
+
+APPROACH 3 -> USING CAYLEY HAMILTON THEOREM -> O((k^2)logn)
+LINK -> https://discuss.codechef.com/t/linear-recurrence-using-cayley-hamilton-theorem/6776
+
+
+APPROACH 4 -> USING CHARACTERIC POLYNOMIALS -> O(P(k)logn), where P(n) is the time required for polynomial multiplication which can be O(k^2) naively,
+ O(k^(1.58)) using karatsuba multiplication, or O(klogk) using fast fourier transform
+SO BEST CASE COMPLEXITY -> O((k*logk)*n)
+LINK -> https://codeforces.com/blog/entry/97627#comment-864474
+
+
+
+
+
+
+ LIST OF DIFFERENT APPROACHS -> https://codeforces.com/blog/entry/100158

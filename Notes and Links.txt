@@ -1,0 +1,205 @@
+Initialisation of vector of int takes 8*3 bytes alone-> https://codeforces.com/blog/entry/119622
+
+
+
+NO of operations in 1 second - > https://codeforces.com/blog/entry/80680
+
+Bitwise operations are O(1) -> https://codeforces.com/blog/entry/73558
+				https://www.geeksforgeeks.org/cpp-bitset-and-its-application/
+
+
+Sum over Subset(SOS) dp -> https://codeforces.com/blog/entry/45223
+
+For adding 1 in a number using bitwise opearators =>x+1 is equivalent to -(~x)  , Link: https://www.wikitechy.com/technology/add-1-given-number/
+To substract one from x=> ((x << 1) + (~x))  : link https://www.geeksforgeeks.org/subtract-1-without-arithmetic-operators/
+
+
+Mo's Algorithm -> 	https://codeforces.com/blog/entry/61203
+
+
+Sqrt Techniques  -> https://codeforces.com/blog/entry/96713,     https://codeforces.com/blog/entry/96713
+Light and heavy vertices => For M edges,   At most sqrt(M) nodes with big degree ( degree greater then sqrt(M)) -> link same as above, Question 398D Instant messenger tutorial
+ if the sum of N values is S ,then there are at most √(2*S) distinct values -> Link same as above
+==> If there is graph, consider working on heavy and light nodes.
+
+
+=> meet in the middle Technique ->  https://codeforces.com/blog/entry/95571
+	It is used when finding answer for n/2 (n can be any parameter, not always size) is possible(within constraints) but not for n, In such
+	case, the answers for two halves are calculated separately and then merged as per the questions.
+	-> In many cases, if complexity is higher, focus on middle element to reduce the complexity
+
+
+
+
+
+Solving Tree Queries using euler tour and segment trees    -> https://usaco.guide/gold/tree-euler?lang=cpp
+
+
+
+CP Tricks      ->   https://codeforces.com/blog/entry/48417
+
+
+Parallel Binary Search -> 	https://codeforces.com/blog/entry/45578
+
+
+
+Useful observation in tree using diameter-> if we put all nodes on diameter in a straight line,  n1 -> n2 -> n3 -> n4 -> n5 -> n6 -> n7 -> n8
+then n1 and n8 are leaves, subtree at n2 has atmost size of 2 ( otherwise n1 won't be one end), similarly, subtree n3 has atmost size of 3, n4 of 4, then again n5 of 4, n6 of 3 and so on
+Link-> https://www.youtube.com/watch?v=MOy4UDjN8DM   ( from 11.00 to 12.00)
+	
+
+
+******** In C++, For custom comparator, always write comparator using < only
+https://codeforces.com/blog/entry/72525
+https://codeforces.com/blog/entry/9604  ( Break-Neck 's comment) 
+
+
+
+
+
+Subset Sum Square Root Optimisation -> https://codeforces.com/blog/entry/49812,  https://codeforces.com/blog/entry/100910,   	https://codeforces.com/blog/entry/98663
+
+
+
+We can compute inverse of a number under mudulo p in O(1) instead of O(logp) ->  https://codeforces.com/blog/entry/100910?#comment-896029
+
+
+
+
+Nim game and Grundy numbers ->  	https://codeforces.com/contest/1312/problem/F
+How to calcualte period of Grundy numbers -> https://stackoverflow.com/questions/37383086/find-a-period-of-eventually-periodic-sequence      ,     https://codeforces.com/blog/entry/66040?#comment-747930
+
+
+Erdos szekeres theorem is applicable for any array with distinct element as an array with n distinct elements can be mapped as a permutation
+Link -> https://codeforces.com/blog/entry/111187
+
+
+
+
+
+as in most problems related to sqrt-heuristics, it may be optimal to choose the constant that is not exactly √N
+, but something similar to it 
+
+
+
+
+
+For using upper_bound for non increasing vectors, just define comparator that in what condition first element should be written first, then upper bound for x will written index of element just larger than given element
+Also for finding upper or lower bound of some different type from stored one, create fake element of type stored in vector to compare
+
+
+
+
+an array of integers which contains wide variety of numbers (1 to 1e9), but array length is 1e5 something, and we need to store some cnt of each value or similar things,
+just do maping of elements into a permutation.
+
+
+
+
+To find no of elements between x and y in a given set=> we can do this using policy based data structure ->  https://codeforces.com/blog/entry/11080
+
+
+
+
+For using lower or upper_bound on decreasing array, create new cmpr(int x, int y) return x<y
+
+
+Prefix automation best question -> https://codeforces.com/contest/1721/problem/E
+=> if we have already build prefix function, now adding new character can be O(n), but if we had build prefix automation, adding new character will be O(1)
+
+
+
+
+
+integer division c/d for negative c returns ⌈c/d⌉ instead of ⌊c/d⌋
+
+
+
+For struct, do not use 'new' keyword
+
+For deleting vector to save memory use either of below
+	vector<int>().swap(v);
+
+
+
+We can update map while iterating on it unlike sets
+
+
+ priority_queue is much faster, maybe 2x faster than set -> So if need to find minelment or max element and bounds are tight, use priority queue instead of set
+
+-> Array is much faster than vector
+
+
+
+if x is divisible by a1, a2, a3, ... an, then x is also divisible by LCM(a1,a2,a3,....an)
+
+
+
+
+
+=> if n can we written as m1*m2, then generally finding all divisors or prime factors of n can be done in root(n)=root(m1*m2)
+But by taking advantage of n=m1*m2, we can do it in root(m1+m2)
+Link -> see implementation of problem -> https://codeforces.com/contest/1792/problem/E
+Also implemneted in Genrating_divisors_from_prime_factorization in general function in templete
+
+
+
+=> Dijkstra don't even work on negative edges
+
+
+
+
+in a array a, finding aj such that aj<=ai can bw done using stack, Link - see editorial problem E mid part -> https://codeforces.com/blog/entry/112963
+
+
+
+
+If we want to iterate on only set bits in a bitmask, we can use idea that i&(~i) return an integer having just least significant bit of i turned on.
+For bitset, we can use Find_next function
+
+
+Unordered map or unordered set is much faster than ordered map or ordered sed respectively ( alomost 2 times)
+
+
+
+
+Sometimes  it seems like the solution is though dp, but in dp we have to go on in both directions like grid problems where we can move in all directions, etc, we can use graph approach bfs
+ex -> https://codeforces.com/contest/1602/problem/D 
+bfs approach video -> https://www.youtube.com/watch?v=TkfIa1sFTBU
+
+
+
+
+ ===> don't directly use size of vector anywhere, always first convert into int and then use
+eg for(int i=arr.size();i>=arr.size()-5;i--), will run for values which are smaller than arr.size()-5
+instead use   for(int i=arr.size(); i>=(int)(arr.size())-5;i--)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Most learning questions -> 
+https://codeforces.com/contest/1792/problem/E
+
+https://codeforces.com/contest/1814/problem/E -> Idea of storing dp in segment tree, when some element of array on which dp is created changes, we don't need recalculate whole dp, only logn values need to be changed if we use segment tree
+https://codeforces.com/contest/1569/problem/E
+https://codeforces.com/contest/1463/problem/E -> How to compress and decompress vertices in a graph
+https://codeforces.com/contest/920/problem/F 	-> includes many concepts
+https://codeforces.com/contest/1602/problem/D   -> watch this to learn more -> https://www.youtube.com/watch?v=TkfIa1sFTBU&t=2300s
+https://codeforces.com/contest/1605/problem/D 	-> importance of thinking bipartiteness and binary representation of number
+
+

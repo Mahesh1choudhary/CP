@@ -1,0 +1,4 @@
+1-> Wilson Theorem - if p is prime, then (p-1)! mod p = -1
+
+
+2 -> sum of square theorems -> https://brilliant.org/wiki/fermats-sum-of-two-squares-theorem/

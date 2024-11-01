@@ -1,0 +1,27 @@
+Blog 1 -> parity of permutation -> https://codeforces.com/blog/entry/97849
+    1.1 - parity can be found by finding inversion in O(nlogn)
+    1.2 - but parity alone can be counted in O(n) - method in Blog 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+BEST QUESTIONS RELATED TO PERMUATIONS
+1 - https://codeforces.com/problemset/problem/986/B
+
+
+
+
+
+
+

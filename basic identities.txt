@@ -1,0 +1,7 @@
+1--- module operator doesn't interfere with multiplications
+	(a.b) mod m = (a mod m).(b mod m)(mod m)
+
+
+
+2--- From basic properties of GCD we know that GCD(x,y)=GCD(x,y-x).The same applies for multiple arguments: GCD(x,y,z,…)=GCD(x,y-x,z-x,…).Let's use this for GCD(a1+bj,…,an+bj) and subtract a1+bj from all other arguments: GCD(a1+bj,…,an+bj)=GCD(a1+bj,a2−a1,…,an−a1).
+Here x,t,z... are sorted in increasing order, and also assuming gcd(0,x)=x;

@@ -1,0 +1,55 @@
+
+Geometry observations -> https://codeforces.com/problemset/problem/1044/C
+
+Convex hull trick- 1.- https://www.youtube.com/watch?v=HnZKQJtGeHs&t=2s
+			 
+
+Li-chao tree - https://www.youtube.com/watch?v=-StmrE2gY44
+		   https://codeforces.com/blog/entry/86731
+
+
+
+various dp optimisations- https://codeforces.com/blog/entry/8219
+
+
+1D1D dp optimization- https://codeforces.com/blog/entry/93772
+			    https://sites.google.com/site/ubcprogrammingteam/news/1d1ddynamicprogrammingoptimization-parti?pli=1
+			    https://www.youtube.com/watch?v=QuQc1ZWujDg&t=4s
+
+
+Parallel binary search - https://www.youtube.com/watch?v=NGbaWEjM8MI&t=7s
+
+
+
+Bitmasking+ dp - https://www.geeksforgeeks.org/bitmasking-and-dynamic-programming-set-1-count-ways-to-assign-unique-cap-to-every-person/
+		   - https://www.hackerearth.com/practice/algorithms/dynamic-programming/bit-masking/tutorial/
+		   - https://usaco.guide/gold/dp-bitmasks?lang=cpp
+
+
+
+Aliens's trick - Lagrange multiplier-   https://en.wikipedia.org/wiki/Lagrange_multiplier
+  		    https://web.archive.org/web/20210511092429/http://www.serbanology.com/
+
+
+Dsu on tree-> Arpa's blog on codeforces ,  https://soi.ch/wiki/smaller-to-larger/
+
+
+
+Prime Counting function -> codeforces blogs ,https://acgan.sh/posts/2016-12-23-prime-counting.html
+		 Problem F here- https://codeforces.com/blog/entry/44466#comment-317276
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Linear recurrences
+	1-Berlekamp Messey =>https://mzhang2021.github.io/cp-blog/berlekamp-massey/ 

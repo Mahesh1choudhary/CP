@@ -1,0 +1,9 @@
+exit code 134 (SIGABRT signal) - Your code is exiting with code 134, which means it received a SIGABRT signal. After debugging your code, I found that you had multiple buffers overflows. 
+	The problem was that you tried to access an array with an index of its length to get the last element, like this: arr[n] if n is the length of arr. The problem is that arrays start
+	at index 0, so to get the last element you must use arr[n-1].
+	may also arise if we allocate a vector of size greater than maximum possible size
+exit code 137- may arise if we allocate a vector of size greater than maximum possible size
+
+exit code 139(SIGSEGV signal)  - segmentation fault-  if vector is declared and we addressing its index, but no memory is allocated i. e. it is not initialised
+
+exit code 136- we are dividing by zero

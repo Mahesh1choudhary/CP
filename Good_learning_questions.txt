@@ -1,0 +1,130 @@
+https://codeforces.com/blog/entry/97179
+
+https://codeforces.com/problemset/problem/1637/E
+
+https://codeforces.com/contest/1101/problem/F -> using blogwoosh #6 or https://codeforces.com/blog/entry/76182
+
+https://codeforces.com/problemset/problem/1272/F 			-> Very good usage of maintaining parent in dp
+
+https://codeforces.com/problemset/problem/1218/I			-> good 2-SAT problem
+
+https://codeforces.com/problemset/problem/1210/C			-> gcd property
+
+https://codeforces.com/contest/1896					-> observation
+
+https://codeforces.com/problemset/problem/1184/E2			-> good tree question with multiple approaches
+
+https://codeforces.com/problemset/problem/1031/C		
+
+https://codeforces.com/problemset/problem/1166/E			-> nice approach				
+
+https://codeforces.com/problemset/problem/1163/D			-> KMP + dp question
+
+https://codeforces.com/problemset/problem/1156/D			-> different use of DSU
+
+https://codeforces.com/problemset/problem/1155/D			-> open close dp
+
+https://codeforces.com/problemset/problem/1149/B
+
+https://codeforces.com/problemset/problem/1144/E			-> seeing string as number written in base 26	
+
+https://codeforces.com/problemset/problem/1105/E			-> Godd meet in the middle questions
+
+https://codeforces.com/contest/1921/problem/F				-> Good root(n) appraoch
+
+https://codeforces.com/problemset/problem/1102/F			-> hamiltonian paths
+
+https://codeforces.com/problemset/problem/1097/D			-> multipicative functions
+
+https://codeforces.com/problemset/problem/1076/E			-> Difference array on tree
+
+https://codeforces.com/problemset/problem/1059/D			-> Double related question
+
+https://codeforces.com/problemset/problem/1045/G			-> Good coordinate compression + segment tree question
+
+https://codeforces.com/problemset/problem/1044/C			-> very good geometry question
+
+https://codeforces.com/problemset/problem/954/F				-> Very good dp idea - computing in present of obstacles
+https://codeforces.com/problemset/problem/821/E				-> similar as above 
+
+https://codeforces.com/contest/955 					-> good question + issue related to inbuilt sqrt fundction -> can overcove using y=sqrt(x)+2, while(y*y>x) y--,
+
+
+https://codeforces.com/problemset/problem/981/E				-> removing element from subset sum
+
+https://codeforces.com/problemset/problem/986/B				-> observation based, parity of permutation
+
+https://codeforces.com/problemset/problem/1012/B			-> totally different idea
+
+https://codeforces.com/problemset/problem/933/B				-> thinking in terms of negative bases - look negative base 											template
+
+https://codeforces.com/contest/1917/problem/D				-> good inversion related problem
+
+https://codeforces.com/problemset/problem/916/D				-> persistenet data structure
+
+https://codeforces.com/problemset/problem/908/D				-> good dp+probability question
+
+https://codeforces.com/problemset/problem/863/F				-> min cost max flow
+
+https://codeforces.com/problemset/problem/855/E				-> nice approach
+
+https://codeforces.com/problemset/problem/821/D				-> good strategy related to dial/dijkstra(shortest path finding algorithm)  etc to reduce number of edges
+
+
+https://codeforces.com/problemset/problem/819/B				-> adding progression like a(x-l)+b in differenc array
+
+https://codeforces.com/problemset/problem/813/E	   BEST QUESTION	-> Good appraoch - segment tree related
+
+https://codeforces.com/problemset/problem/814/D				-> converting problem into tree problem
+
+https://codeforces.com/contest/1933/problem/F				-> converting problem into dfs/bfs
+
+https://codeforces.com/problemset/problem/786/A				-> game on arbitrary graphs
+
+https://codeforces.com/problemset/problem/785/E				-> very good sqrt decomposition
+
+https://codeforces.com/problemset/problem/776/E				-> euler totient function- see editorial 
+
+https://codeforces.com/problemset/page/10?tags=1900-2200		-> bitset + dp
+
+===>    https://codeforces.com/contest/1486/problem/E 				-> dijkstra with new idea
+
+https://codeforces.com/problemset/problem/744/B				-> good interactive question with good approaches
+
+
+https://codeforces.com/problemset/problem/731/E				-> good dp question - zero sum game based
+
+https://codeforces.com/contest/1954/problem/D				-> standard but good dp problem
+
+https://codeforces.com/problemset/problem/712/D				-> dp problem using generating function
+
+=> https://codeforces.com/problemset/problem/703/D				-> very good - xor + segment tree+ other concepts
+
+=> https://codeforces.com/problemset/problem/1957/E			-> good counting question
+
+https://codeforces.com/problemset/problem/696/C				-> keeping both p and q in p/q coprime while calculating probability under mod
+
+=> https://codeforces.com/problemset/problem/1270/E			-> different approach and idea
+=> https://codeforces.com/problemset/problem/696/C			-> how to maintain gcd =1, in multipyling probability matrix
+
+https://codeforces.com/problemset/problem/1096/F			-> idea of relating contribution of known numbers and unknown numbers in inversion
+
+
+https://codeforces.com/problemset/problem/1093/G			-> good idea of considering every possible sign of numbers
+
+ => https://codeforces.com/problemset/problem/893/F			-> sparse table with 3 indices- new idea
+
+https://codeforces.com/problemset/problem/891/C				-> MST properties related
+
+https://codeforces.com/problemset/problem/845/G				-> basis + shortest path on graph
+
+==> https://codeforces.com/problemset/problem/830/C			-> distinct possible values of ceil(a/b)
+
+==> https://codeforces.com/contest/1920/problem/D			-> new idea
+
+https://codeforces.com/problemset/problem/1707/B
+
+https://codeforces.com/problemset/problem/1994/D
+
+
+https://codeforces.com/problemset/problem/1916/E		-> very good Euler tour related question

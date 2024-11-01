@@ -1,0 +1,313 @@
+
+=> suppose we have to compute phi(phi(...n))..)) k times ( k of order 1e12). phi- euler totient function. The idea is if n is even then phi(n)<=n/2 as all odd will be coprime to n. so we will compute phi atmost of order logn times- https://codeforces.com/problemset/problem/776/E
+
+
+=> array length should always be positive
+// int m=primes.size(), int arr[m], if m=0, them it will give error, so check for this fact
+
+
+=> in a set/multiset etc, if we use st.erase(st.find(x)) and x does not exists, then it will give 134 error, so be careful
+
+
+
+=> do not use inbuilt sqrt function for intergers because it has precision errors -> https://codeforces.com/problemset/problem/955/C
+So, use binary search instead of it
+If we really want to use it, then use it in this way-> https://codeforces.com/blog/entry/107717 (errichto's comment)
+
+
+=> emplace_back is much better than push_back
+
+=> clear() in vector reduces its size , not capacity, so better option is to use swap
+	vector<int>().swap(v);
+  Link -> https://cplusplus.com/reference/vector/vector/clear/
+  same is true for other containers -> Link -> https://stackoverflow.com/questions/709146/how-do-i-clear-the-stdqueue-efficiently
+
+
+=> if we are using lamda function, in recursive manner with everything as reference ([&])
+the after calling recursive function lets say dfs(u,v), if u and va are global variable, then after calling dfs(u,v), and then doing some calculation using this will give wrong result as u and v will be the last u and v called in the dfs(u,v), not the current one, because they are global variables
+
+
+
+
+=> to convert '0','1'....'9' to number -> use s[i]-'0'
+   to convert 0,1,2...,9, into '1'...,'9' -> use (num+'0')
+   to convert 'a','b'... 'z',  into 0 to 25, use s[i]-'a'
+   to convert 0 to 25 into 'a','b'....,'z', use num+'a';
+
+
+
+=> (1/1)^2+ (1/2)^2 + (1/3)^2+ ..... = pi*pi/6
+
+
+
+=> for string + is O(length of string) not O(1), so use push_back() which is O(1)
+eg. string s1, s2;
+for(int i=0;i<n;i++) s1+=s2[i]  -> this is O(n*n) not O(n)
+instead use
+for(int i=0;i<n;i++) s1.pb(s2[i]) -> this is O(n)
+
+
+==> VECTOR OF VECTOR CONSUMES LOT OF MEMORY, ALSO DEFINING VECTOR ALSO CONSUES EXTRA MEMORY, INSTEAD ALWAYS DEFINE ARRAY AS MUCH AS YOU CAN.
+
+
+
+
+** if we are using function1 in function 2, but declared function1 below function2 , then it will give error, so always declare function in right order
+** using lot of pass by reference varaibles consumes lot of time, so instead of passing by reference make them global- here when making vector ,etc global we can either define their size as maximum possible or can do it as per need
+** even passing many variable or arrays into other functions and if this function is called many time, then whole code will consume lot of time and space, instead define variables as globals
+
+
+=>Largest sum contiquous subarray -  Kadane's algorithm
+
+=> For fast input/output in competitive programming-
+	use two lines in main() function:
+	ios_base::sync_with_stdio(false);
+    	cin.tie(NULL);
+	cout.tie(NULL);
+=> for speedin up- use these lines at top
+	#pragma GCC optimize("O3,unroll-loops")
+	#pragma GCC target("avx2,bmi,bmi2,lzcnt,popcnt")
+
+
+=> Ternary search - to find maxima or minima of a function
+	if we know that answer lies between two values and is governed by some function, then use ternary search
+
+=> upper_bound(starting pointer, end pointer, target), lower_bound(), etc returns iterator, to get the index
+	substract starting pointer-
+	int index= upper_bound(vector.begin(),vector.end(),target)-vector.begin()
+
+
+=> Lame's Theorem - https://www.cut-the-knot.org/blue/LamesTheorem.shtml
+
+=> Sparse table - Range queries ( more specifically range minimum and maximum queries) ---- can only be used on immutable(not changing) data or array-It often serves as a substitute for segment tree in case of immutable data
+	Link to video-https://www.youtube.com/watch?v=uUatD9AudXo
+
+
+=> Fenwick tree- for solving queries like calculating the sum of a range- other solution can be maintained prefix sum or using a segment tree, 
+	but in such , updation takes  more time, so fenwick tree is preferred.
+
+=> sqrt decomposition- *important
+
+
+
+
+
+=> data structures for RANGE QUERIES
+	=> If array is immutable or static i.e. values of array cannot be changed between the queries
+		->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GRAPHS
+
+=> shortest path in weighted undirected graphs- n vertices , m edges
+    ->Bellman-Ford-> for all kind of graphs , provided it does not contains negative cycles - O(nm)
+    -> Shortest path faster algorithm- improved version of bellman-ford algorithm- better than bellman-Ford, but worst case O(mn)
+    -> Dijkstra's algorithm - better complexity- negative weights should not be present - O(n+mlogm)
+=> spanning trees- defined only for undirected graphs
+	-> kruskal's algorithm- O(nlogm +mlogm) = O(nlogm) - used most of the time as it is simple
+	-> Prim's algorithm - (n+mlogm)
+=> topological sort is possible only for directed graphs that do not contains any cycle.
+	But reverse postorder done in kosaraju's algorithm for strongly connected components is different from topological sort, as reverse
+	postorder can be found for graphs with cycles.
+
+
+
+
+
+
+
+
+=> in any data structure like set,vector,etc, string comparitions take O(n) time , so its better to use hashing to compare in O(1)
+
+=> during modulus related codes, if there is substraction of two values and then taking modulus by m, then remember to add m as substraction can give negative answer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=> pass by value consumes more memory and is faster than pass by reference. for eg., we have a vector of size n, if we pass it by value to a function, then it creates a copy of the same vector, so 
+  	memory consumption is doubled.
+	whereas pass by reference does not consume extra memory, but is bit slower as compared to pass by value.
+
+=> if we pass some variable by reference, then if it is modified in the function, then this modified value will appear outside the function also. But if we pass by value, then modified value inside
+ 	the function will not be reflected outside the function.
+
+
+
+
+=> if need to sort one vector according to another one, then create a one vector of pair, that contains vector one at first position and vector two at second position of the pair or vice versa and sort accordingly.
+
+
+
+
+
+
+
+
+
+
+=> map in cpp
+initially no element is added in map mp;
+mp[0]=1; will add key-value pair (0-1) if key 0 is not present if present it will update it
+similarly, mp[0]++ is also valid even if map is empty, it will add (0-1) in the map if initially map is empty, otherwise increase the value of key 0 by 1
+
+
+
+
+
+
+
+=> for upper_bound or lower_bound on vector of pair of ints or any other data structure, we need to define the comparator
+
+
+
+
+
+
+
+
+=> to define a vector<pair<int,vector<int>>>, first define a pair<int,vector<int>> value(0,vector<int>(n)) , then vector<pair<int,vector<int>>> v(m,value)
+
+
+
+
+=> priority queue according to given function- 		https://en.cppreference.com/w/cpp/container/priority_queue
+    		min priority queue of type t( int, pair<int,int>, etc)= priority_queue<pair<int,int>,vector<pair<int,int>>,greater<pair<int,int>>>
+
+
+
+
+
+
+
+
+=> while using binary operators like &, | , ^, always use bracket to compare the expression, otherwise anwer will be wrong
+	(x&(1<<i))==1 is write, whereas x&(1<<i)==1 gives wrog result 
+
+
+
+
+
+
+
+=> In maps if we delete key k=*it.first, then update iterator first and then delete this key, so that iterator remains updated
+
+
+
+
+=> always keep bitwise functions(&,|,^,<<,>>,etc) in bracket, otherwise they will give wrong answer.
+ eg.- (a&b)==c is right, but a&b==c will give incorrect answer.
+
+
+
+
+
+
+
+
+
+n⊕k=x is equivalent to n⊕x=k
+
+in using floating point to get better accuracy in (a/b)*c, do instead (a*c)/b;
+
+
+
+Modulo property =>   (c*a) mod (c*b) => c*(a mod b)
+
+
+
+
+
+
+
+
+
+=> generally whatever defined inside a function, their memory is freed when function returns as everything is defined on stack
+But if a variable or data structure is deined using "new" keyword, then they are defined on heap and won't be cleared when function returns, we need to clear then by ourself using "delete" keyword
+
+
+
+
+
+
+
+=> To get the lexicographically next permutation of a given permuation , we can use next_permutation in cpp -> O(n) where n is size of permutation
+Similarly we can use prev_permutation to get previous permutation
+
+To find all permutations, first create smallest permutation- all elements sorted in non decreasing order, and then use next_permutation, as this method generate next permutation which is lexicographically greater than current. IF exists, it will rearrange the array and return true,  if no such permutation exists, then function return false.
+
+
+
+
+
+
+
+=> Idea of keeping map monotonic -> https://leetcode.com/problems/maximum-sum-queries/?envType=list&envId=rbrojvt2
+
+
+
+=> In custom sorting, if we need to give extra parameter in compare function , then we can use functors for this -> https://varrunr.wordpress.com/2012/07/30/passing-extra-parameters-to-stl-sort/
+
+
+
+
+
+
+=> For non linear dp or recurrences, interpolating can be useful -> https://codeforces.com/blog/entry/82953
+
+
+
+=> clear() in unordered_map is very slow, so avoid using this as much as possible
+
+
+=> set keeps elements on the basis of comparison, if in compare function with parameter pi -> so if two elements have same p parameters  p1=p2, then only one element will be kept in set
+ so in such cases , use multiset, or include parameter as part of element too, so that if parameters are same, we can sort using element value OR we can change cmpr fundtion to include case when parameter values are same
+For more detail, check set_custom_sorting file in templates
+
+
+
+
+
+
+=> endl is very slow and flushes the output , so always use "\n" which is very fast when no flushing is necessary
+
+
+
+
+=> if x1*c1+x2*c2+.....xk*ck = b, then solution exists if and only if gcd(c1,c2...ck) divides b
+
+
+=> declare two int pointers => int *p1, *p2 -> is right, but int * p1,p2 is wrong as it declares p1 to be pointer and p2 to be int
+

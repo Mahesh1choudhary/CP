@@ -1,0 +1,72 @@
+1- DP with connected components =>count no of permutaions with some characteristics or constraints and to find permutations that maximize or minimize some functions
+
+
+2- Lagrange interpolation- to calculate 1power(n) +2power(n)+ ..... + xpower(n) in O(n) ; this series is realted to faulhaber's formula.
+ For polynomial related questions- it can be used
+
+
+3- Generating functions- counting no of ways with a conditon, on graphs, sets,etc anything
+			  Generating functions have wide variety of uses
+
+
+
+
+4- Exchange argument- For greedy algorithms
+
+
+5- Given two subsets, occurence of each element in xor of this subset- FWHT algorithm
+
+6- For XOR related questions- use vector basis calculation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Linear recurrences=>  general structure=>f(n)= a1*f(n-1)+........ akf(n-k); f(n) depends on k states
+
+				1- using dp in O(n)
+				2- using matrix exponentiation in (k^3logn)
+				3- using cayley hamiltonian theorem in O(k^2logn)-can be done 					 in(klogk(logn)) using fft ;
+				 here in 2 and 3, k is size of square matrix(k*k)
+				3- using method described here(https://mzhang2021.github.io/cp-blog/berlekamp-massey/) in O((klogk)*(logn))
+				4- using generating function in O((klogk)*(logn))
+	Even a given single variable dp problem can be converted into recurrence relation and then solved by a faster method. (not sure about multi state dp)
+
+
+
+
+
+
+
+MinCut/Maxflow => Ford Fulkerson - O(|f|m) where |f|= max flow possible
+			Edmond-Karp  - O(m2n)
+			n= no of vertices, m= no of edges
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
