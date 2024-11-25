@@ -6,8 +6,7 @@ Blog 1 -> parity of permutation -> https://codeforces.com/blog/entry/97849
 
 
 
-
-
+Link1 - https://nor-blog.codeberg.page/posts/2023-01-09-permutations-for-beginners/
 
 
 

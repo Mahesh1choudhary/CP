@@ -139,6 +139,6 @@ void Restore_LIS(){
 /*
 Very good questions
 Q1 - https://leetcode.com/problems/minimum-operations-to-make-a-subsequence/solutions/999153/java-c-python-lcs-to-lis/
-
+Q2 - https://codeforces.com/blog/entry/85951
 */
 

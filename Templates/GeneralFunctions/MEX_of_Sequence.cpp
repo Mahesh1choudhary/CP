@@ -77,6 +77,8 @@ struct MEX{
 
 
 
+// segment tree approach for subarray mex quesries - check question 1
+// Link 1- https://codeforces.com/blog/entry/84024?#comment-714175
 
 
 
@@ -91,6 +93,18 @@ struct MEX{
 
 
 
+
+
+
+
+
+/*
+Good Questions
+
+1- https://codeforces.com/problemset/problem/1436/E
+
+
+*/
 
 
 
