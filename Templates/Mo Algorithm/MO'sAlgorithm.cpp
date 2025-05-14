@@ -44,7 +44,7 @@ struct Query{
 
 vector<int> Mo_Algorithm(vector<Query> queries){
     vector<int> answers(queries.size());    // answer to the queries
-    sort(queries.begin(),queries.end());
+    sort(queries.begin(),queries.end());    // < is defined in query class
 
     // TODO -> Initialize data structure
 

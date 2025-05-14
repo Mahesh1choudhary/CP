@@ -116,6 +116,13 @@ long long power(long long a, long long b,long long mod){
 }
 
 
+/*
+if n is 2 or 3, then finding the product and directlu using it is much faster than calling 3 loops
+like
+mat[0][0]= A[0][0]*B[0][0] + A[0][1]*B[1][0];
+
+
+*/
 
 
 

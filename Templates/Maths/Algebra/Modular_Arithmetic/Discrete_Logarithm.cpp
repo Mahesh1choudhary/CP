@@ -10,7 +10,7 @@ using namespace std;
 
 
 
-// Case 1 -> general case - whether a is coprime or not - doesn't matter
+// Case 1 -> general case - whether a is coprime or not witm m - doesn't matter
 // if b is not divisible by gcd(a,m), then there is no solution, otherwise we check if there is solution or not
 /* a^x = b (mod m) => (g*a')(a)^(x-1) = g*b' (mod g*m') gives a'*a^(x)=a*b' (mod m')
 if x=pn-q where p belong to [1 to ceil(m/n)] and q belongs to [0 to n]

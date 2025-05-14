@@ -12,7 +12,7 @@ using namespace std;
 
 int INF=1e9;
 vector<vector<int>> graph; //adjacency list representation
-vector<vector<int>> capacity; // matrix representation
+vector<vector<int>> capacity; // matrix representation 
 vector<int> parent; // parent[i]= parent of vertec i in path; used in dfs function
 // gives flow increase in path from s to t in one round
 int dfs(int s, int t){

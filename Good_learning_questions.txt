@@ -128,3 +128,5 @@ https://codeforces.com/problemset/problem/1994/D
 
 
 https://codeforces.com/problemset/problem/1916/E		-> very good Euler tour related question
+
+https://codeforces.com/blog/entry/44466				-> sieve with better complexity

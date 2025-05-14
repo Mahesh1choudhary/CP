@@ -6,6 +6,51 @@
 using namespace std;
 
 // Link -> https://cp-algorithms.com/data_structures/segment_tree.html#addition-on-segments
+// storing dp in segment tree question -> https://codeforces.com/problemset/problem/1814/E
+
+/*
+arithmetic progression in segment tree
+LINK2 ->  https://stackoverflow.com/questions/39929725/update-in-segment-tree
+LINK3 -> https://codeforces.com/blog/entry/64521
+
+two ways to handle using lazy propagation-> {starting element, ending element} or {starting element, difference}
+
+// check once, used {start element, ending element}
+const int maxn=2e5+5;
+int segtr[4*maxn]; pair<int,int> add[4*maxn];
+
+void build(int v, int tl, int tr){
+    if(tl==tr){
+        segtr[v]=0, add[v]={0,0};
+        return;
+    }
+    int mid=(tl+tr)/2;
+    build(2*v,tl,mid), build(2*v+1,mid+1,tr);
+    segtr[v]=0, add[v]={0,0};
+}
+
+void push(int v,tl,tr){
+    int mid=(tl+tr)/2;
+    add[2*v].first+=add[v].first, add[2*v].second+= add[v].first+ mid-tl;
+    add[2*v+1].first+= add[v].second -(tr-mid-1), add[2*v+1].second+=add[v].second;
+    add[v]={0,0};
+}
+void update(int v, int tl, int tr, int l, r,int vall, valr){
+    if(l>r) return;
+    
+    if(tl==l && tr==r){
+        add[v].first+=vall;
+        add[v].second+=valr;
+        return;
+    }
+    push(v,tl,tr);
+    int mid=(tl+tr)/2;
+    update(2*v,tl,mid,l,min(mid,r),vall, vall+min(mid,r)-l);
+    update(2*v+1,mid+1,tr,max(mid+1,l),r, valr-r+max(mid+1,l),valr);
+    
+    segtr[v]=max(segtr[2*v], segtr[2*v+1]);
+}
+*/
 
 int n, segt[4*MAXN];
 

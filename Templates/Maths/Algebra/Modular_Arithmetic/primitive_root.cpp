@@ -5,6 +5,9 @@
 #define pb push_back
 
 using namespace std;
+
+// LINK - https://cp-algorithms.com/algebra/primitive-root.html
+
 // g is primitive root modulo n if for any a such that gcd(a,n)==1 or for any a which is coprime with n
 // there exists an integer k such that power(g,k)= a (mod n);
 // k is called index or discrete logarithm of a to base g modulo n

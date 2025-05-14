@@ -4,6 +4,7 @@
 #define pb push_back
 
 using namespace std;
+// Also read about XOR hashing.
 
 // LINK - https://cp-algorithms.com/string/string-hashing.html
 // using hashes, string comparisons can be reduced to O(1) instead of O(min(n1,n2)), where n1, n2 are string lengths
@@ -111,3 +112,9 @@ IF we have 1e9 order comparisons, then we need 3 or four normal hashes( m of ord
 
 // also check unordered map and set file for hashing
 
+
+
+
+
+
+//XOR hashing questions - https://codeforces.com/problemset/problem/1830/C

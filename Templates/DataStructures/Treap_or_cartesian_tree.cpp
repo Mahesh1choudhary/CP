@@ -5,7 +5,7 @@
 #define pb push_back
 using namespace std;
 
-// Treap -> Binary Serch Tree + heap   -> https://cp-algorithms.com/data_structures/treap.html#implementation
+// Treap -> Binary Search Tree + heap   -> https://cp-algorithms.com/data_structures/treap.html#implementation
 // https://codeforces.com/blog/entry/112664
 // https://codeforces.com/blog/entry/92340,   
 
