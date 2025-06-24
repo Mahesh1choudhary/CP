@@ -7,3 +7,12 @@
 
 
 // https://usaco.guide/adv/offline-del?lang=cpp#dynamic-connectivity
+
+
+/*
+rollback realted questions - 
+https://codeforces.com/problemset/problem/1858/E1
+
+
+
+*/

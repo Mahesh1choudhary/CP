@@ -39,7 +39,7 @@ void gen_divisors(int pos, LL val){ // current index, value formed till now
 //But by taking advantage of n=m1*m2, we can do it in root(m1+m2)
 
 // prime factorization of n in O(root(m1+m2));
-void find_factors(LL n, LL m1, LL m2){
+void find_factors(LL m1, LL m2){
 
     for(int d=2;d*d<=m1 || d*d<=m2;d++){
         int cnt=0;

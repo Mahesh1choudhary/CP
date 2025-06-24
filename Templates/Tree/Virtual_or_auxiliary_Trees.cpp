@@ -122,7 +122,7 @@ int create_virtual_tree(vector<int> &ver){
     // O(k*logk)
     // sorting by dfs order and removing duplicates
     sort(ver.begin(),ver.end(), cmpr); 
-    ver.erase(unique(ver.begin(),ver.end()));
+    ver.resize(unique(ver.begin(),ver.end()));
 
     // empting previously build virtual tree(if build)
     for(int v:ver){
