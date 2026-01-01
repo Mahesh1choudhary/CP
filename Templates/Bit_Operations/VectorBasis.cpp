@@ -59,6 +59,7 @@ int main(){
 /*
 
 Q1 - https://codeforces.com/problemset/problem/845/G
+Q2 - https://codeforces.com/problemset/problem/1902/F
 
 
 */

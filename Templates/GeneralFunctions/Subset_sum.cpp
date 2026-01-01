@@ -126,8 +126,7 @@ time complexity - O(W*root(W)), space complexity - O(W)
 
 
 /*
-trick 5 used in question -> https://codeforces.com/contest/981/problem/E
-
+trick 5 from LINK2 used in question -> https://codeforces.com/contest/981/problem/E
 
 
 
@@ -161,6 +160,8 @@ trick 5 used in question -> https://codeforces.com/contest/981/problem/E
 
 // REMOVING ELEMENTS FROM KNAPSACK
 // LINK -> https://codeforces.com/blog/entry/100910
-// Related Question -> https://codeforces.com/problemset/problem/981/E
+// Q1 -> https://codeforces.com/problemset/problem/981/E
+// Q2 - https://codeforces.com/problemset/problem/1970/G3
+// it can be used with O(w*root(w)) approach also - see Q2
 
 

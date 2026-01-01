@@ -70,7 +70,7 @@ set<T,decltype(cmpr)> st(cmpr); // with lambda function, do not use & as done in
 
 
 
-
+memory
 //  IF WE WANT TO GIVE MORE THAN 2 PARAMETERS AS INPUT TO COMPARE FUNCTION, THEN WE CAN EITHER USE LAMBDA FUNCTION OR USE FUNCTORS FOR THIS PURPOSE -> https://varrunr.wordpress.com/2012/07/30/passing-extra-parameters-to-stl-sort/
 
 
